@@ -1,0 +1,81 @@
+.Block-wrapper
+  position: relative
+  display: flex
+  align-items: start
+  border-radius: 5px
+  &[data-focus=true], &:hover
+    background-color: #f7f7f7
+  &:hover
+    .Block-trigger
+      opacity: 1
+  .Block-trigger
+    opacity: 0
+    position: absolute
+    left: -25px
+    top: 0
+    margin: 5px 0
+    font-size: 20px
+    cursor: pointer
+    &:hover
+      opacity: 1
+  .Block-menu
+    position: absolute
+    display: flex
+    flex-wrap: wrap
+    width: 112px
+    top: 30px
+    left: -125px
+    padding: 5px
+    border: solid 1px #f7f7f7
+    border-radius: 5px
+    .Block-menu-item
+      height: 20px
+      width: 20px
+      padding: 1px
+      display: flex
+      justify-content: center
+      align-items: center
+      border: solid 1px #f7f7f7
+      border-radius: 5px
+      margin: 2px
+      cursor: pointer
+      font-size: 13px
+      &.green
+        background-color: #e9edc9
+      &.yellow
+        background-color: #fcf6bd
+      &.red
+        background-color: #fec5bb
+  .Block-dot
+    width: 6px
+    height: 6px
+    border-radius: 100%
+    background-color: #333
+    margin: 12px 1em
+    cursor: pointer
+  .Block-content
+    flex-grow: 1
+    padding: 5px 10px
+    min-height: 20px
+    outline: none
+    white-space: pre-wrap
+    overflow-wrap: break-word
+    &.green
+      background-color: #e9edc9
+    &.yellow
+      background-color: #fcf6bd
+    &.red
+      background-color: #fec5bb
+    &.base
+      font-size: 14px
+    &.heading1
+      font-size: 24px
+      font-weight: 700
+    &.heading2
+      font-size: 21px
+      font-weight: 700
+    &.heading3
+      font-size: 18px
+      font-weight: 700
+.Editor-indent
+  padding-left: 2em
