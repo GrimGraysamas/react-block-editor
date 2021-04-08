@@ -8,4 +8,4 @@ It has a few simple functionnalities, including:
 - block indentation and nesting
 - previewing data in JSON format
 
-Demo available at https://block-editor.grimfeld.tech/
+Demo available at https://apps.block-editor.grimfeld.tech/
