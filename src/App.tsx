@@ -55,7 +55,11 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ width: '25%' }}></div>
+      <div style={{ width: '25%' }}>
+        <p className="Credits">
+          App by <a href="https://grimfeld.tech">Grimfeld</a>
+        </p>
+      </div>
       <div className="Editor-wrapper">
         <Editor
           id={getRandomString()}

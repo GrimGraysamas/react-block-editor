@@ -7,3 +7,5 @@ It has a few simple functionnalities, including:
 - changing block background color
 - block indentation and nesting
 - previewing data in JSON format
+
+Demo available at https://block-editor.grimfeld.tech/

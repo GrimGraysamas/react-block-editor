@@ -28,3 +28,17 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.Credits {
+  margin: 0;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 15px;
+}
+
+.Credits a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
