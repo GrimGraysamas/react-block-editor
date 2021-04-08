@@ -1,4 +1,4 @@
-#React Block Editor
+# React Block Editor
 
 This is a small react project using typescript. It is a block type text editor in the style of RemNote / Dynalist / Roam Research...
 It has a few simple functionnalities, including:
