@@ -5,7 +5,7 @@
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start;
+          align-items: flex-start;
   border-radius: 5px;
 }
 
@@ -13,11 +13,11 @@
   background-color: #f7f7f7;
 }
 
-.Block-wrapper:hover .Block-trigger {
+.Block-wrapper:hover .Block-menu-trigger {
   opacity: 1;
 }
 
-.Block-wrapper .Block-trigger {
+.Block-wrapper .Block-menu-trigger {
   opacity: 0;
   position: absolute;
   left: -25px;
@@ -27,8 +27,15 @@
   cursor: pointer;
 }
 
-.Block-wrapper .Block-trigger:hover {
+.Block-wrapper .Block-menu-trigger:hover {
   opacity: 1;
+}
+
+.Block-wrapper .Block-nest-trigger {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 0;
+  cursor: pointer;
 }
 
 .Block-wrapper .Block-menu {

@@ -32,6 +32,7 @@ export default function Block(props: Props) {
 
   const [focus, setFocus] = useState(false)
   const [menu, setMenu] = useState(false)
+  const [nested, setNested] = useState(false)
 
   useEffect(() => {
     const el = document.getElementById(props.id)
@@ -82,7 +83,8 @@ export default function Block(props: Props) {
   return (
     <div className="Block-main" data-focus={focus}>
       <div className="Block-wrapper">
-        <i className='bx bx-dots-horizontal-rounded Block-trigger' onClick={() => setMenu(!menu)}></i>
+        <i className='bx bx-dots-horizontal-rounded Block-menu-trigger' onClick={() => setMenu(!menu)}></i>
+        {props.children.length > 0 && <i className={['bx Block-nest-trigger', nested ? 'bx-caret-right' : 'bx-caret-down'].join(' ')} onClick={() => setNested(!nested)}></i>}
         {menu &&
           <div className="Block-menu">
             <i className='bx bx-paragraph Block-menu-item' onClick={() => props.handleTypeChange(props.id, 'base')}></i>
@@ -109,7 +111,7 @@ export default function Block(props: Props) {
           onBlur={handleBlur}
         />
       </div>
-      {props.children.length > 0 &&
+      {props.children.length > 0 && !nested &&
         <div className="Editor-indent">
           <Editor
             id={getRandomString()}
